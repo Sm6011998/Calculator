@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soubhik Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Open+Sans:wght@400;500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <container class="container">
+        <div class="calculator">
+            <form>
+                <div class="display1">
+                    <input class="display" type="text" name="display" placeholder="   Do math faster...">
+                </div>
+                <div class="button1">
+                    <input type="button" value="AC" class="button" onclick="display.value = '' ">
+                    <input type="button" value="CE" class="button" onclick="display.value = display.value.slice(0,-1)">
+                    <input type="button" value="%" class="button" onclick="display.value += '%'">
+                    <input type="button" value="/" class="button" onclick="display.value += '/' ">
+                </div>
+                <div class="button1">
+                    <input type="button" value="7" class="button" onclick="display.value += '7' ">
+                    <input type="button" value="8" class="button" onclick="display.value += '8' ">
+                    <input type="button" value="9" class="button" onclick="display.value += '9' ">
+                    <input type="button" value="*" class="button" onclick="display.value += '*' ">
+                </div>
+                <div class="button1">
+                    <input type="button" value="4" class="button" onclick="display.value += '4' ">
+                    <input type="button" value="5" class="button" onclick="display.value += '5' ">
+                    <input type="button" value="6" class="button" onclick="display.value += '6' ">
+                    <input type="button" value="-" class="button" onclick="display.value += '-'" >
+                </div>
+                <div class="button1">
+                    <input type="button" value="1" class="button" onclick="display.value += '1' ">
+                    <input type="button" value="2" class="button" onclick="display.value += '2' ">
+                    <input type="button" value="3" class="button" onclick="display.value += '3' ">
+                    <input type="button" value="+" class="button" onclick="display.value += '+' ">
+                </div>
+                <div class="button1">
+                    <input type="button" value="0" class="button" onclick="display.value += '0' ">
+                    <input type="button" value="00" class="button" onclick="display.value += '00' ">
+                    <input type="button" value="." class="button" onclick="display.value += '.' ">
+                    <input type="button" value="=" class="button" onclick="display.value = eval(display.value)">
+                </div>
+                
+                
+
+            </form>
+        </div>
+    </container>
+    <script>
+        alert("let's calculate the world!");
+    </script>
+    
+</body>
+</html>
